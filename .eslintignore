@@ -1,0 +1,5 @@
+# eslint 忽略文件
+dist
+webpack.dev.js
+webpack.prod.js
+.eslintcr.js
