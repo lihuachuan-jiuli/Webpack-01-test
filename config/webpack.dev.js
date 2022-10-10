@@ -16,8 +16,7 @@ module.exports ={
         // 开发模式没有输出 (za)
         path:undefined,
         // 入口文件打包输出文件的名
-        filename:'js/jiuli.js',
-   
+        filename:'js/jiuli.js',  
     },
 
     // 加载器

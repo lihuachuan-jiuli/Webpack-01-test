@@ -33,8 +33,12 @@ function getStyleLoader (pre){
 
 // 因为是在node.js 环境中运行的 所以要用 module.export
 module.exports ={
+      // 模式
+      mode: 'production', //生产模式
+
     // 入口
     entry: './src/miani.js', //相对路径
+
     // 输出
     output: {
         // 所有文件的输出路径 (绝对路径)
@@ -134,6 +138,5 @@ module.exports ={
         new CssMinimizerPlugin()
     ],
 
-    // 模式
-    mode: 'production', //生产模式
+  
 }
