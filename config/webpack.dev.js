@@ -11,6 +11,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports ={
     // 入口
     entry: './src/miani.js', //相对路径
+
     // 输出
     output: {
         // 开发模式没有输出 (za)
@@ -128,4 +129,15 @@ module.exports ={
 
     // 模式
     mode: 'development', //开发模式
+
+    // // '运行时报错的行号'与'源代码的行号保持一致'
+    // devtool :'eval-source-map',
+
+    // 配置 @
+    resolve: {
+        alias:{
+            // 告诉 Webpack ,程序员写的代码中 @ 符号表示src 这一层目录
+            "@": path.join(__dirname,'./src')
+        }
+    }
 }
